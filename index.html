@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tracker">
+        <nav class="navi">
+            <h2>Crypto Price Tracker</h2>
+            <i class="fa-regular fa-moon"></i>
+        </nav>
+
+        <div class="container">
+            <div class="intro">
+                <h1>Live Crypto Prices</h1>
+                <p>Real time prices from crypto market</p>
+            </div>
+
+            <div class="mid">
+                <div class="dropdown">
+                    <img class="coinImage"src="https://imgs.search.brave.com/DovSEqsNLRPTccH8oEe5-B9zH9avv-x32OU0KDQJKnQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbnNjb3V0LmNv/bS9pY29uL3ByZW1p/dW0vcG5nLTI1Ni10/aHVtYi9iaXRjb2lu/LWljb24tc3ZnLWRv/d25sb2FkLXBuZy0x/NTU5NDMxLnBuZz9m/PXdlYnAmdz0xMjg">
+                    
+                    <select id="down"></select>
+                    
+                </div>
+            
+                <!-- <div class="refresh">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <p>Refresh</p>
+                </div> -->
+            </div>
+
+            <div class="content">
+                <div class="coin" >
+                    
+                    <img class="img" src="https://imgs.search.brave.com/DovSEqsNLRPTccH8oEe5-B9zH9avv-x32OU0KDQJKnQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbnNjb3V0LmNv/bS9pY29uL3ByZW1p/dW0vcG5nLTI1Ni10/aHVtYi9iaXRjb2lu/LWljb24tc3ZnLWRv/d25sb2FkLXBuZy0x/NTU5NDMxLnBuZz9m/PXdlYnAmdz0xMjg">
+                    <p class="coinheading">Bitcoin (BTC)</p>
+                </div>
+
+                <div class="amt">
+                    <div class="amount">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <h2 class="price">amount</h2>
+                    </div>
+                    <p>Current Price</p>
+                    <p class="lastUpdated"></p>
+
+                </div>   
+                <div class="perchange">
+                    <div class="change1h">
+                        <p id="per1h">  percentage</p>
+                        <p>1 Day change</p>
+                    </div>
+
+                    <div class="change">
+                        <p id="per">  percentage</p>
+                        <p>24 Hour change</p>
+                    </div>
+                    
+                    <div class="change7d">
+                        <p id="per7d">  percentage</p>
+                        <p>7 Days change</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="data">
+                <div class="marketcap">
+                    <p>Market Cap</p>
+                    <div class="firstData">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <p id="mcap">16.7 T</p>
+                    </div>
+                                   
+                </div>
+
+                <div class="cs">
+                    <p> Circulating Supply </p>
+                    <div class="secondData">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <p id="csupply">16.7 T</p>
+                    </div>                
+                </div>
+
+                <div class="ts">
+                    <p> Total Supply </p>
+                    <div class="thirdData">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <p id="tsupply">16.7 T</p>
+                    </div>                
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

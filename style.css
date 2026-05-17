@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(75, 75, 75);
+}
+
+.tracker{
+    background-color: rgb(32, 31, 31);
+    min-height: 70vh;
+    min-width: 75vw;
+    border-radius: 0.5rem;
+    padding:2rem ;
+    color: white;
+}
+nav{
+    background-color: black;
+    color: white;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+
+}
+nav i{
+    cursor: pointer;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 1rem 0;
+    font-size: large;
+    font-family: serif;
+}
+
+.container .mid{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+}
+.container .mid .dropdown{
+    display: flex;
+    align-items: center;
+    min-height: 2rem;
+    min-width: 10rem;
+    border: 0.15px solid whitesmoke;
+    border-radius: 0.25rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+.container .mid .dropdown select{
+    padding-left: 4rem;
+    color: white;
+    background-color:  rgb(32, 31, 31);
+    border: none;
+    font-size: large;
+    
+}
+
+.mid img{
+    margin-left: 0.19rem;
+    height: 1.5rem;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.content .coin .coinheading{
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: serif;
+}
+.content .coin{
+    display: flex;
+    align-items: center;
+}
+.content .coin img{
+    height: 3rem;
+}
+
+.content .coin p{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-left: 0.75rem;
+}
+
+.content .amount {
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .amt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.perchange{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ 
+}
+
+.content .change{
+    height: 3rem;
+    width: 7rem;
+    border: 1px solid rgb(112, 5, 243);
+    margin: 2rem 0 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.change1h{
+    height: 3rem;
+    width: 7rem;
+    border: 1px solid rgb(112, 5, 243);
+    margin: 2rem 0 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.change7d{
+    height: 3rem;
+    width: 7rem;
+    border: 1px solid rgb(112, 5, 243);
+    border-radius: 0.5rem;
+    margin: 2rem 0 1rem 0;
+    padding: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 3rem 0 0 0 ;
+    background-color: rgba(51, 51, 51, 0.895);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+
+}
+
+
+.firstData{
+    display: flex;  
+    margin: 2rem 0 1rem 0;
+    
+}
+.secondData{
+    display: flex;  
+    margin: 2rem 0 1rem 0;
+
+}
+.thirdData{
+    display: flex; 
+    margin: 2rem 0 1rem 0;
+
+}
+
+down{
+    color: azure;
+}
+
+select:focus{
+    outline: none;
+}
+
+.marketcap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#per1h{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+#per{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+#per7d{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+
+
+/* .refresh-animate{
+    animation: spinFade 0.6s ease;
+}
+
+@keyframes spinFade {
+    0%{
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: rotate(180deg) scale(0.8);
+        opacity: 0.5;
+    }
+    100%{
+        transform: rotate(0deg) scale(1);
+        opacity:1;
+    }
+} */
