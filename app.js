@@ -22,7 +22,6 @@ const body = document.querySelector("body");
 
 for(let select of selects){
     select.addEventListener("change",(coin)=>{
-        console.log(coin.target.value);
         updateAmount(coin.target.value);
         updateCoinHeading(coin.target.value) ;
         updateChange(coin.target.value);
@@ -117,7 +116,7 @@ function updateAmount(selectedCoinId){
         else if(newPrice<prevPrice[selectedCoinId]){
             amount.style.color="red";
         }
-        else amount.style.color="white";
+        
     }
     prevPrice[selectedCoinId] = newPrice;
     amount.textContent = newPrice;
@@ -160,11 +159,11 @@ function start(selectedCoinId){
 }
 
 
-let iswhite=false;
+let isLightMode=false;
 moon.addEventListener("click",()=>{
-    if(iswhite){
+    if(isLightMode){
         tracker.style.backgroundColor ="rgb(32, 31, 31)";
-        iswhite=false;
+        isLightMode=false;
         tracker.style.color = "white";
         data.style.backgroundColor="rgba(51, 51, 51, 0.895)"
         slt.style.backgroundColor = "rgb(32, 31, 31)";
@@ -174,7 +173,7 @@ moon.addEventListener("click",()=>{
     }
     else{
         tracker.style.backgroundColor = "#FFEBCC";
-        iswhite=true;
+        isLightMode=true;
         tracker.style.color = "black";
         data.style.backgroundColor="#BFDDF0"
         slt.style.backgroundColor = "#BFDDF0";
